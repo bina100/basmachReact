@@ -6,6 +6,7 @@ import ImagesList from './h_m_components/ImagesList';
 import PluseMinus from './h_m_components/PluseMinus';
 import SelectBox from './h_m_components/SelectBox';
 import SelectImg from './h_m_components/SelectImg';
+import CurrencyCalc from './h_m_components/currencyCalc';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ImagesList/>
       <SelectBox/>
       <SelectImg/>
+      <CurrencyCalc/>
     </div>
   );
 }
