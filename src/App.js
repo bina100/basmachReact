@@ -4,6 +4,7 @@ import InputVal from './components/inputVal';
 import Message from './components/message';
 import ImagesList from './h_m_components/ImagesList';
 import PluseMinus from './h_m_components/PluseMinus';
+import SelectBox from './h_m_components/SelectBox';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Message txt="first 222"/>
       <PluseMinus/>
       <ImagesList/>
+      <SelectBox/>
     </div>
   );
 }
