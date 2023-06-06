@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class InputVal extends Component {
+export default class SelectBox extends Component {
     state = { color: "silver" }
     colors_ar = ["red", "blue", "green", "orange"]
 

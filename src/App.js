@@ -5,6 +5,7 @@ import Message from './components/message';
 import ImagesList from './h_m_components/ImagesList';
 import PluseMinus from './h_m_components/PluseMinus';
 import SelectBox from './h_m_components/SelectBox';
+import SelectImg from './h_m_components/SelectImg';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <PluseMinus/>
       <ImagesList/>
       <SelectBox/>
+      <SelectImg/>
     </div>
   );
 }
