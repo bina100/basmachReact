@@ -2,6 +2,7 @@ import './App.css';
 import Counter from './components/counter';
 import InputVal from './components/inputVal';
 import Message from './components/message';
+import ImagesList from './h_m_components/ImagesList';
 import PluseMinus from './h_m_components/PluseMinus';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Message txt="first 111"/>
       <Message txt="first 222"/>
       <PluseMinus/>
+      <ImagesList/>
     </div>
   );
 }
