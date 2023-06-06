@@ -2,34 +2,37 @@ import React, { Component } from "react"
 export default class PluseMinus extends Component {
 
 
-    divStyle = {
-        background: "yellow",
-        padding: "16px"
-    }
-
     counter = 0
-  
 
     pluse = () => {
-        this.counter++
-        if (this.state.counter + 1 >= 5) {
-            this.counter = 0
+        if (this.counter+1 > 5) {
+             this.couter =0
         }
+        else{
+            this.counter++
+        
+
+        }
+        this.forceUpdate()
+        console.log(this.counter)
     }
     minus = () =>{
-        this.counter--
-        if (this.state.counter - 1 <= 0) {
+        if (this.counter-1 < 0) {
             this.counter = 0
+        }else{
+            this.counter--
         }
-
+        this.forceUpdate()
+        console.log(this.counter)
     }
-
 
     render() {
         return (
-            <div style={{ color: this.colors_ar[this.state.counter] }}>
-                <h2>Counter: {this.state.counter}</h2>
-                <button onClick={this.add1}>Add 1 {this.state.user}</button>
+            <div>
+                <h2>Mission 1</h2>
+                <h2>Counter: {this.counter}</h2>
+                <button onClick={this.pluse}>+</button>
+                <button onClick={this.minus}>-</button>
             </div>
         )
     }
